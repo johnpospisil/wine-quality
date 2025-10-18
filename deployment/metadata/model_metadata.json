@@ -1,0 +1,112 @@
+{
+  "deployment_info": {
+    "created_date": "2025-10-17 18:52:46",
+    "project_name": "Wine Quality Prediction",
+    "version": "1.0.0",
+    "python_version": "3.12+",
+    "random_state": 42
+  },
+  "models": {
+    "xgb_regression_red": {
+      "type": "XGBoost Regressor",
+      "task": "Quality Score Prediction (3-8)",
+      "dataset": "Red Wine",
+      "features": 24,
+      "performance": {
+        "mae": 0.4503,
+        "r2": 0.4323,
+        "within_1_point": 0.918
+      },
+      "hyperparameters": {
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "n_estimators": 100,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9
+      }
+    },
+    "rf_classification_red": {
+      "type": "Random Forest Classifier",
+      "task": "Binary Classification (Good vs Not Good)",
+      "dataset": "Red Wine",
+      "features": 24,
+      "performance": {
+        "accuracy": 0.8989,
+        "auc": 0.9305,
+        "precision": 0.8235,
+        "recall": 0.7568
+      },
+      "hyperparameters": {
+        "n_estimators": 200,
+        "max_depth": 20,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      }
+    },
+    "gb_regression_red": {
+      "type": "Gradient Boosting Regressor",
+      "task": "Quality Score Prediction (3-8)",
+      "dataset": "Red Wine",
+      "features": 24,
+      "performance": {
+        "mae": 0.4576,
+        "r2": 0.4208
+      },
+      "hyperparameters": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 200,
+        "subsample": 0.9
+      }
+    }
+  },
+  "feature_engineering": {
+    "total_features": 24,
+    "original_features": 11,
+    "engineered_features": 13,
+    "feature_types": {
+      "interactions": 3,
+      "ratios": 3,
+      "polynomials": 3,
+      "domain_specific": 4
+    },
+    "top_features": [
+      "alcohol",
+      "sulphates",
+      "volatile acidity",
+      "total sulfur dioxide",
+      "alcohol_x_sulphates",
+      "citric acid"
+    ]
+  },
+  "data_requirements": {
+    "required_columns": [
+      "fixed acidity",
+      "volatile acidity",
+      "citric acid",
+      "residual sugar",
+      "chlorides",
+      "free sulfur dioxide",
+      "total sulfur dioxide",
+      "density",
+      "pH",
+      "sulphates",
+      "alcohol"
+    ],
+    "scaling": "StandardScaler (mean=0, std=1)",
+    "missing_values": "Not allowed - must be handled before prediction"
+  },
+  "usage_guide": {
+    "regression": "Use for precise quality score predictions (continuous output)",
+    "classification": "Use for binary good/not-good decisions (discrete output)",
+    "recommended": "Use classification for high-stakes decisions, regression for quality estimation"
+  },
+  "limitations": {
+    "quality_range": "Trained on wines with quality 3-8",
+    "wine_type": "Optimized for red wines",
+    "sample_size": "Trained on 1,599 red wine samples",
+    "geographic": "Portuguese Vinho Verde wines",
+    "prediction_reliability": "91.8% within \u00b11.0 quality points"
+  }
+}
