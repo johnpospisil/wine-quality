@@ -835,15 +835,17 @@ This project uses the publicly available UCI Wine Quality Dataset, which is prov
 
 ---
 
-## Contact & Contributions
+## Contact
 
-For questions, issues, or contributions, please open an issue on the GitHub repository.
+For questions, suggestions, or collaboration opportunities, please reach out through GitHub issues or direct contact.
+
+📩 **Email**: [john@johnpospisil.com](mailto:john@johnpospisil.com)  
+🐦 **Twitter/X**: [@audiofreak7](https://x.com/audiofreak7)  
+🔗 **LinkedIn**: [John Pospisil](https://www.linkedin.com/in/johnpospisil/)
 
 ---
 
-**Last Updated:** January 2025  
+**Last Updated:** October 2025  
 **Status:** ✅ Complete (10/10 Phases)  
 **Best Model Performance:** MAE 0.45 (Regression), 89.9% Accuracy (Classification)  
 **Deployment Status:** Production-ready API available
-
-🍷 **Cheers to data-driven winemaking!**
