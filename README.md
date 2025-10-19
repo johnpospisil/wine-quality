@@ -1,4 +1,4 @@
-# Wine Quality Prediction Project
+# Predicting Portuguese Vinho Verde Wine Quality: A Machine Learning Approach
 
 ## Overview
 
