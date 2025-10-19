@@ -1,5 +1,5 @@
 # Wine Quality Prediction - Deployment Requirements
-# Generated: 2025-10-17 18:52:46
+# Generated: 2025-10-18 20:21:56
 
 # Core dependencies
 pandas>=2.0.0
